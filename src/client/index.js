@@ -11,7 +11,7 @@ console.log(checkForName);
 
 alert("I EXIST")
 
-// You could call it aylienapi, or anything else
-var textapi = new MeanCloud({
-  application_key: "your-key"
-});
+export {
+ checkForName,
+ handleSubmit
+}

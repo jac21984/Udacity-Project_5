@@ -6,13 +6,17 @@ var bodyParser = require('body-parser')
 var cors = require('cors')
 
 dotenv.config();
-console.log(`Your API key is ${process.env.API_KEY}`);
 
 var json = {
     'title': 'test json response',
     'message': 'this is a message',
     'time': 'now'
 }
+
+// You could call it aylienapi, or anything else
+var formdata = new FormData({
+  application_key: process.env.API_KEY
+});
 
 const app = express()
 app.use(cors())
