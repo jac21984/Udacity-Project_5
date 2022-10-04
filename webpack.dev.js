@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 // TODO: Require the html-webpack-plugin
 
 module.exports = {
@@ -26,10 +27,12 @@ module.exports = {
     },
     // TODO: Add the plugin for index.html
     plugins: [
-    new HtmlWebPackPlugin({
-        template: "./src/client/views/index.html",
-        filename: "./index.html",
-    })
-]
+		new HtmlWebPackPlugin({
+			template: "./src/client/views/index.html",
+			filename: "./index.html",
+		}),
+		
+		new WorkboxPlugin.GenerateSW()
+	]
     // Don't forget your commas!
 }
