@@ -2,6 +2,7 @@ var path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
 const dotenv = require('dotenv');
+
 var bodyParser = require('body-parser')
 var cors = require('cors')
 
@@ -13,10 +14,12 @@ var json = {
     'time': 'now'
 }
 
+console.log(`Your API key is ${process.env.API_KEY}`);
+
 // You could call it aylienapi, or anything else
-var formdata = new FormData({
-  application_key: process.env.API_KEY
-});
+const formData = new FormData();
+
+formData.append("application_key", process.env.API_KEY);
 
 const app = express()
 app.use(cors())
