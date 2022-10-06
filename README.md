@@ -31,13 +31,14 @@ Project for Udacity. Build Tools and Single Page Web Apps.
 # Installation
 [(Back to top)](#table-of-contents)
 
-To use this project, first clone the repo on your device .
-Open Index.html file in prefered web browser.
+To use this project, first clone the repo on your device.
+Compile build-dev or build-prod.
+Open dist/Index.html file in prefered web browser.
 
 # Usage
 [(Back to top)](#table-of-contents)
 
-Enter zipcode, enter current feelings and click Generate button.
+Enter Name (Ex. "Picard" and click submit button.
 
 # Development
 [(Back to top)](#table-of-contents)
@@ -66,6 +67,6 @@ Project worked on in correlation with  Udacity.
 # Footer
 [(Back to top)](#table-of-contents)
 
-This was entertaining.
+This was a headache.
 
-![Footer](https://c.tenor.com/gHfiGG3DU0QAAAAC/sheldon-big-bang-theory.gif)
+![Footer](https://media.giphy.com/media/2nGfl4QfpCtW/giphy.gif)
