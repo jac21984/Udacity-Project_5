@@ -1,10 +1,71 @@
-# Weather-Journal App Project
+![Banner](https://c.tenor.com/merVUP-66lIAAAAC/banging-head-ouch.gif)
 
-## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+# Udacity-Weather_Journal_App-Project-3
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/jac21984/Udacity-Project_5?include_prereleases)
+![GitHub last commit](https://img.shields.io/github/last-commit/jac21984/Udacity-Project_5)
+![GitHub issues](https://img.shields.io/github/issues-raw/jac21984/Udacity-Project_5)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/jac21984/Udacity-Project_5)
+![GitHub liscence](https://img.shields.io/github/license/jac21984/Udacity-Project_5)
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+Project for Udacity. Build Tools and Single Page Web Apps.
+
+# Demo-Preview
+
+![Random GIF](https://raw.githubusercontent.com/jac21984/Udacity-Project_3/main/preview.gif?token=GHSAT0AAAAAABWCB2H3BTC3WJYHIECWXKZAYV2XXXQ)
+
+# Table of contents
+
+- [Project Title](#Udacity-Weather_Journal_App-Project-3)
+- [Demo-Preview](#demo-preview)
+- [Table of contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Development](#development)
+- [Contribute](#contribute)
+    - [Sponsor](#sponsor)
+    - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
+- [License](#license)
+- [Footer](#footer)
+
+# Installation
+[(Back to top)](#table-of-contents)
+
+To use this project, first clone the repo on your device .
+Open Index.html file in prefered web browser.
+
+# Usage
+[(Back to top)](#table-of-contents)
+
+Enter zipcode, enter current feelings and click Generate button.
+
+# Development
+[(Back to top)](#table-of-contents)
+
+Edit files as needed for your own project.
+
+# Contribute
+[(Back to top)](#table-of-contents)
+
+No contribututions needed.
+
+### Sponsor
+[(Back to top)](#table-of-contents)
+
+Project worked on in correlation with  Udacity.
+
+### Adding new features or fixing bugs
+[(Back to top)](#table-of-contents)
+
+
+# License
+[(Back to top)](#table-of-contents)
+
+[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
+
+# Footer
+[(Back to top)](#table-of-contents)
+
+This was entertaining.
+
+![Footer](https://c.tenor.com/gHfiGG3DU0QAAAAC/sheldon-big-bang-theory.gif)
