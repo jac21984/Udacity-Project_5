@@ -12,7 +12,7 @@ Project for Udacity. Build Tools and Single Page Web Apps.
 
 # Demo-Preview
 
-![Random GIF](https://raw.githubusercontent.com/jac21984/Udacity-Project_3/main/preview.gif?token=GHSAT0AAAAAABWCB2H3BTC3WJYHIECWXKZAYV2XXXQ)
+![Random GIF](https://github.com/jac21984/Udacity-Project_5/blob/4a35276c993abc1cbb12a5691cc9b2924064cb29/preview.gif)
 
 # Table of contents
 
