@@ -12,6 +12,7 @@ module.exports = {
         libraryTarget: 'var',
         library: 'Client'
     },
+	stats: 'verbose',
     module: {
         rules: [
             {
@@ -22,6 +23,13 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+            },
+			{
+                test: /\.(png|jpe?g|gif)$/i,
+                loader: 'file-loader',
+                options: {
+                  name: '[path][name].[ext]',
+                }
             }
         ]
     },
