@@ -8,7 +8,6 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
 	mode: 'production',
-    devtool: 'source-map',
     entry: './src/client/index.js',
 	output: {
 		clean: true, // Clean the output directory before emit.
@@ -29,7 +28,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' ]
+                use: [ MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
             },
 			{
                 test: /\.(png|jpe?g|gif)$/i,

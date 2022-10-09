@@ -8,31 +8,26 @@ var cors = require('cors')
 
 dotenv.config();
 
-var json = {
-    'title': 'test json response',
-    'message': 'this is a message',
-    'time': 'now'
-}
+console.log(__dirname)
 
-console.log(`Your API key is ${process.env.API_KEY}`);
-
-// You could call it aylienapi, or anything else
-const formData = new FormData();
-
-formData.append("application_key", process.env.API_KEY);
+// API
+const baseURL = 'https://api.meaningcloud.com/sentiment-2.1?'
+const apiKey = process.env.API_KEY
+console.log(`Your API Key is ${process.env.API_KEY}`);
+let userInput = [] // const does not work
 
 const app = express()
 app.use(cors())
-// to use json
 app.use(bodyParser.json())
-// to use url encoded values
 app.use(bodyParser.urlencoded({
-  extended: true
+  extended: false
 }))
 
 app.use(express.static('dist'))
 
-console.log(JSON.stringify(mockAPIResponse))
+app.get('/test', function (req, res) {
+    res.send(mockAPIResponse)
+})
 
 app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
@@ -45,4 +40,16 @@ app.listen(8081, function () {
 
 app.get('/test', function (req, res) {
     res.json(mockAPIResponse);
+})
+
+// POST Route
+app.post('/api', async function(req, res) {
+    userInput = req.body.url;
+    console.log(`You entered: ${userInput}`);
+    const apiURL = `${baseURL}key=${apiKey}&url=${userInput}&lang=en`
+
+    const response = await fetch(apiURL)
+    const webData = await response.json()
+    console.log(webData)
+    res.send(webData)
 })
