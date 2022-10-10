@@ -4,7 +4,7 @@ function checkForURL(inputURL) {
      if(regex == null){
          return 0;
      } else{
-     return 1;
+		return 1;
      }
  }
 

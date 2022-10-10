@@ -2,7 +2,6 @@ var path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
 const dotenv = require('dotenv');
-
 var bodyParser = require('body-parser')
 var cors = require('cors')
 
@@ -25,10 +24,6 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static('dist'))
 
-app.get('/test', function (req, res) {
-    res.send(mockAPIResponse)
-})
-
 app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
 })
@@ -49,7 +44,7 @@ app.post('/api', async function(req, res) {
     const apiURL = `${baseURL}key=${apiKey}&url=${userInput}&lang=en`
 
     const response = await fetch(apiURL)
-    const webData = await response.json()
-    console.log(webData)
-    res.send(webData)
+    const data = await response.json()
+    console.log(data)
+    res.send(data)
 })
