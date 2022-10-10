@@ -8,7 +8,7 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/jac21984/Udacity-Project_5)
 ![GitHub liscence](https://img.shields.io/github/license/jac21984/Udacity-Project_5)
 
-Project for Udacity. Build Tools and Single Page Web Apps.
+Project for Udacity. Evaluate a news article with Natural Language Processing.
 
 # Demo-Preview
 
@@ -16,7 +16,7 @@ Project for Udacity. Build Tools and Single Page Web Apps.
 
 # Table of contents
 
-- [Project Title](#Udacity-Weather_Journal_App-Project-3)
+- [Project Title](#Natural Language Processing-Project-5)
 - [Demo-Preview](#demo-preview)
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
@@ -33,12 +33,13 @@ Project for Udacity. Build Tools and Single Page Web Apps.
 
 To use this project, first clone the repo on your device.
 Compile build-dev or build-prod.
-Open dist/Index.html file in prefered web browser.
+Start nmp server.
+Open http://localhost:8081/ in prefered web browser.
 
 # Usage
 [(Back to top)](#table-of-contents)
 
-Enter Name (Ex. "Picard" and click submit button.
+Enter URL (Ex. "https://skintdad.co.uk/" and click submit button.
 
 # Development
 [(Back to top)](#table-of-contents)

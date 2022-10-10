@@ -10,11 +10,11 @@ function handleSubmit(event) {
     postData('http://localhost:8081/api', {url: formText})
 
     .then(function(res) {
-        document.getElementById('polarity').innerHTML = 'Polarity: '+polarityChecker(res.score_tag);
-        document.getElementById("agreement").innerHTML = `Agreement: ${res.agreement}`;
-        document.getElementById("subjectivity").innerHTML = `Subjectivity: ${res.subjectivity}`;
-        document.getElementById("confidence").innerHTML = `Confidence: ${res.confidence}`;
-        document.getElementById("irony").innerHTML = `Irony: ${res.irony}`;
+        document.getElementById('polarity').innerHTML = 'Article Mood: '+polarityChecker(res.score_tag);
+        document.getElementById("agreement").innerHTML = `Author's Opinion: ${res.agreement}`;
+        /* document.getElementById("subjectivity").innerHTML = `Subjectivity: ${res.subjectivity}`; */
+        document.getElementById("confidence").innerHTML = `How Sure?: ${res.confidence}`;
+        document.getElementById("irony").innerHTML = `Irony Check: ${res.irony}`;
     })
     } else {
         alert('Seems like an invalid URL, please try with a valid URL.');

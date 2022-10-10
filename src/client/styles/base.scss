@@ -4,8 +4,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: 100vh;
-    background: center / cover no-repeat url(../img/bgimg.jpg) fixed;
+    background: center / cover no-repeat url(https://wallpaperaccess.com/full/52448.jpg) fixed;
 }
 
 main {
@@ -14,14 +13,12 @@ main {
     text-align: center;
     margin: 2rem;
     font: 300 1rem "Roboto", sans-serif;
-    background: rgba(238, 234, 234, 0.7);
+    background: rgba(238, 234, 234, 0.85);
 }
 
 p {
     margin: 1rem;
 }
-
-
 
 section {
     max-width: 800px;
