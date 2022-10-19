@@ -31,11 +31,11 @@ app.get('/test', function (req, res) {
 })
 
 app.post('/api', async function(req, res) {
-	userInput = req.body.url;
-	console.log(`Testing: ${userInput}`)
+	urlText = req.body.url;
+	console.log(`Testing: ${urlText}`)
 	const formdata = new FormData();
 	formdata.append("key", process.env.API_KEY);
-	formdata.append("url", userInput);
+	formdata.append("url", urlText);
 
 	const requestOptions = {
 	  method: 'POST',
