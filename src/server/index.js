@@ -40,7 +40,6 @@ app.post('/api', async function(req, res) {
 	const requestOptions = {
 	  method: 'POST',
 	  body: formdata,
-	  redirect: 'follow'
 	};
 
 	const response = await fetch(cloudURL, requestOptions)
