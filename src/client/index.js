@@ -1,4 +1,4 @@
-import { checkForURL } from './js/urlChecker'
+import { validateURL } from './js/urlValidator'
 import { handleSubmit } from './js/formHandler'
 
 import './styles/resets.scss'
@@ -8,6 +8,6 @@ import './styles/form.scss'
 import './styles/header.scss'
 
 export {
- checkForURL,
+ validateURL,
  handleSubmit
 }

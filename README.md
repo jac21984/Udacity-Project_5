@@ -39,7 +39,7 @@ Open http://localhost:8081/ in prefered web browser.
 # Usage
 [(Back to top)](#table-of-contents)
 
-Enter URL (Ex. "https://skintdad.co.uk/" and click submit button.
+Enter URL (Ex. "https://www.studenti.it/" or "https://burupo.com/ru/" and click submit button.
 
 # Development
 [(Back to top)](#table-of-contents)
@@ -49,12 +49,15 @@ Edit files as needed for your own project.
 # Contribute
 [(Back to top)](#table-of-contents)
 
-No contribututions needed.
+Thanks to https://www.countryflagsapi.com/
+
+Thanks to https://github.com/emiribegic/evaluate-news-nlp for insperation on how to make things work
+because Udacities files are outdated and dont work.
 
 ### Sponsor
 [(Back to top)](#table-of-contents)
 
-Project worked on in correlation with  Udacity.
+Project worked on in correlation with Udacity.
 
 ### Adding new features or fixing bugs
 [(Back to top)](#table-of-contents)

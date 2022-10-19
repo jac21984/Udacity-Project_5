@@ -1,50 +1,55 @@
 var path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
-const dotenv = require('dotenv');
 var bodyParser = require('body-parser')
-var cors = require('cors')
 
+const dotenv = require('dotenv');
 dotenv.config();
 
-console.log(__dirname)
-
-// API
-const baseURL = 'https://api.meaningcloud.com/sentiment-2.1?'
+const mcURL = "https://api.meaningcloud.com/lang-4.0/identification"
 const apiKey = process.env.API_KEY
-console.log(`Your API Key is ${process.env.API_KEY}`);
-let userInput = [] // const does not work
 
 const app = express()
+const cors = require('cors');
+
 app.use(cors())
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({
-  extended: false
-}))
-
+app.use(bodyParser.urlencoded({extended: false}))
 app.use(express.static('dist'))
+
+console.log(__dirname)
+const cloudURL = 'https://api.meaningcloud.com/lang-4.0/identification'
+const cloudKey = process.env.API_KEY
+let userInput = []
 
 app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
-})
-
-// designates what port the app will listen to for incoming requests
-app.listen(8081, function () {
-    console.log('Example app listening on port 8081!')
 })
 
 app.get('/test', function (req, res) {
     res.json(mockAPIResponse);
 })
 
-// POST Route
 app.post('/api', async function(req, res) {
-    userInput = req.body.url;
-    console.log(`You entered: ${userInput}`);
-    const apiURL = `${baseURL}key=${apiKey}&url=${userInput}&lang=en`
+	userInput = req.body.url;
+	console.log(`Testing: ${userInput}`)
+	const formdata = new FormData();
+	formdata.append("key", process.env.API_KEY);
+	formdata.append("url", userInput);
 
-    const response = await fetch(apiURL)
-    const data = await response.json()
-    console.log(data)
-    res.send(data)
+	const requestOptions = {
+	  method: 'POST',
+	  body: formdata,
+	  redirect: 'follow'
+	};
+
+	const response = await fetch(cloudURL, requestOptions)
+	const cloudData = await response.json()
+	console.log('cloud response:')
+	console.log(cloudData)
+    res.send(cloudData)
+})
+  
+app.listen(8081, function () {
+    console.log('Example app listening on port 8081!')
 })

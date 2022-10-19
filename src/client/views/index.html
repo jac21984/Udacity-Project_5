@@ -11,16 +11,16 @@
 
         <header>
             <h1>
-               Get A Grip
+               Parlez Vous?
             </h1>
 			<h2>
-				Website Emotion Analyzer
+				Website Language Analyzer
 			</h2>
         </header>
 
         <main>
-            <p>Enter a URL of an article / a blog to discover the authors feelings.</p>
-			<p>( examples: https://skintdad.co.uk/  or https://www.miss-thrifty.co.uk/ )</p>
+            <p>Enter a URL to discover the page language.</p>
+			<p>( examples: https://www.studenti.it/ or https://burupo.com/ru/ )</p>
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
                     <input id="url" type="text" name="input" value="" placeholder="Enter URL here">
@@ -30,11 +30,8 @@
 
             <section>
                 <strong>Analysis Results:</strong>
-                <div id="polarity"></div>
-                <div id="agreement"></div>
-                <div id="subjectivity"></div>
-                <div id="confidence"></div>
-                <div id="irony"></div>
+                <div id="language"></div>
+				<img id="flag"></img>
             </section>
         </main>
 
