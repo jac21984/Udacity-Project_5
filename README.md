@@ -49,7 +49,7 @@ Edit files as needed for your own project.
 # Contribute
 [(Back to top)](#table-of-contents)
 
-Thanks to meaning cloud for their language idetification API
+Thanks to "meaning cloud" for their language idetification API
 
 Thanks to https://www.countryflagsapi.com/
 
