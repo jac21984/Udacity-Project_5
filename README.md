@@ -52,7 +52,7 @@ Edit files as needed for your own project.
 Thanks to https://www.countryflagsapi.com/
 
 Thanks to https://github.com/emiribegic/evaluate-news-nlp for insperation on how to make things work
-because Udacities files are outdated and dont work.
+because Udacities files are outdated and do not work worth a crap.
 
 ### Sponsor
 [(Back to top)](#table-of-contents)
