@@ -44,7 +44,7 @@ app.post('/api', async function(req, res) {
 
 	const response = await fetch(cloudURL, requestOptions)
 	const cloudData = await response.json()
-	console.log('cloud response:')
+	console.log('Meaning Cloud Returned:')
 	console.log(cloudData)
     res.send(cloudData)
 })
