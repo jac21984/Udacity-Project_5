@@ -12,7 +12,7 @@ Project for Udacity. Evaluate a news article with Natural Language Processing.
 
 # Demo-Preview
 
-![Random GIF](https://github.com/jac21984/Udacity-Project_5/blob/4a35276c993abc1cbb12a5691cc9b2924064cb29/preview.gif)
+![Random GIF](https://github.com/jac21984/Udacity-Project_5/blob/62fbcf3ff0cf285bc230791978e401cfe9b40e67/preview.gif)
 
 # Table of contents
 
